@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Online Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LearnHub</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">My Learning</a>
+            <a href="#">Progress</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="btn btn-login">Login</a>
+            <a href="#" class="btn btn-signup">Sign Up</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="course-progress">
+                <h3>Course Progress</h3>
+                <div class="progress-info">
+                    <span>65% Complete</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            
+            <div class="course-content">
+                <h3>Course Content</h3>
+                
+                <div class="module">
+                    <div class="module-title">
+                        <span>Module 1: Introduction</span>
+                        <span>2/5</span>
+                    </div>
+                    <ul class="lessons-list">
+                        <li class="lesson-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <a href="#">Welcome to the Course</a>
+                        </li>
+                        <li class="lesson-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <a href="#">Course Overview</a>
+                        </li>
+                        <li class="lesson-item active">
+                            <i class="far fa-play-circle"></i>
+                            <a href="#">Getting Started</a>
+                        </li>
+                        <li class="lesson-item">
+                            <i class="far fa-circle"></i>
+                            <a href="#">Basic Concepts</a>
+                        </li>
+                        <li class="lesson-item">
+                            <i class="far fa-circle"></i>
+                            <a href="#">Module 1 Quiz</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <div class="video-container">
+                <iframe class="video-player" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-info">
+                <h1 class="video-title">Getting Started with the Course</h1>
+                <p class="video-description">
+                    In this lesson, we'll cover the basic setup and requirements for the course.
+                </p>
+            </div>
+            
+            <div class="navigation-buttons">
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                <a href="#" class="btn btn-primary">
+                    Mark as Complete <i class="fas fa-check"></i>
+                </a>
+                <a href="#" class="btn btn-primary">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="quiz-section">
+                <h2 class="quiz-title">Module 1 Quiz</h2>
+                
+                <div class="quiz-question">
+                    <p class="question-text">1. What is the main purpose of this course?</p>
+                    <ul class="options-list">
+                        <li class="option-item">
+                            <label class="option-label">
+                                <input type="radio" name="q1" class="option-input">
+                                To learn advanced concepts
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="btn btn-primary submit-quiz">Submit Quiz</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
