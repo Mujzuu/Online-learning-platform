@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             progressFill.style.width = (currentWidth + 5) + '%';
             
             const progressText = document.querySelector('.progress-info span');
-            const newProgress = Math.min(100, currentWidth + 5);
+            const newProgress = Math.min(500, currentWidth + 5);
             progressText.textContent = newProgress + '% Complete';
             
             const moduleTitle = activeLesson.closest('.module').querySelector('.module-title span:last-child');
@@ -30,4 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
     submitQuizBtn.addEventListener('click', function() {
         alert('Quiz submitted successfully!');
     });
+
 });
